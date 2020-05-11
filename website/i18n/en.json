@@ -86,6 +86,9 @@
       "Profiles1/ProfileInfo": {
         "title": "Haji p",
         "sidebar_label": "Haji Profiles"
+      },
+      "tools/markdown": {
+        "title": "tools/markdown"
       }
     },
     "links": {

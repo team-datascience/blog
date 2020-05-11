@@ -23,19 +23,10 @@ const users = [
 const siteConfig = {
   title: 'Test Site', // Title for your website.
   tagline: 'A website for testing',
-  // https://rabbani8.github.io
   url: 'https://team-datascience.github.io', // Your website URL
   baseUrl: '/blog/', // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
-  //https://rabbani8.github.io/docusaurus-test/
-  // Used for publishing and more
   projectName: 'blog',
   organizationName: 'team-datascience',
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
@@ -50,18 +41,16 @@ const siteConfig = {
     { blog: true, label: 'Blog' },
   ],
 
-  // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
   headerIcon: 'img/I_love_AI.png',
   footerIcon: 'img/I_love_AI.png',
   favicon: 'img/I_love_AI.png',
-
   /* Colors for website */
   colors: {
-    primaryColor: '#084B8A',
-    secondaryColor: '#FFFFFF',
+    primaryColor: '#1F618D',
+    secondaryColor: '#1F618D',
   },
 
   /* Custom fonts for website */
@@ -107,7 +96,11 @@ const siteConfig = {
 
   // Show documentation's last update time.
   enableUpdateTime: true,
-
+  
+  scrollToTop: true,
+  scrollToTopOptions: {
+    zIndex: 100,
+  },
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',

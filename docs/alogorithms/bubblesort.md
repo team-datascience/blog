@@ -5,3 +5,4 @@ sidebar_label: quciksort
 ---
 # bubble interdiction
    * THIS DEAL WITH ALGO
+   
