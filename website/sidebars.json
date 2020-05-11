@@ -1,0 +1,45 @@
+{
+  "Technical": {
+    "Data Scientist": [
+      "DataScientistProfiles/ProfileInfo-3",
+      "DataScientistProfiles/ProfileInfo-4",
+      {
+        "type": "subcategory",
+        "label": "Profile Overview",
+        "ids": [
+          "DataScientistProfiles/ProfileInfo",
+          "DataScientistProfiles/ProfileInfo-2"
+        ]
+      }
+    ]
+  },
+  "Profiles": {
+    "ProfilesY": [
+      "Profiles1/ProfilesIntro",
+      "Profiles1/Haji_mastan_Vali",
+      "Profiles1/ProfileInfo-4",
+      {
+        "type": "subcategory",
+        "label": "Profile Overview",
+        "ids": [
+          "Profiles1/ProfileInfo",
+          "Profiles1/ProfileInfo-2"
+        ]
+      }
+    ]
+  },
+  "algorithms": {
+    "algorithms": [
+      "alogorithms/alogorithmsIntro",
+      "alogorithms/bubblesort",
+      {
+        "type": "subcategory",
+        "label": "sorting alogorithms",
+        "ids": [
+          "alogorithms/quciksort",
+          "alogorithms/mergesort"
+        ]
+      }
+    ]
+  }
+}
