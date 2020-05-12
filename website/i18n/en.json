@@ -87,6 +87,9 @@
         "title": "Haji p",
         "sidebar_label": "Haji Profiles"
       },
+      "tools/docusaurus-tips": {
+        "title": "tools/docusaurus-tips"
+      },
       "tools/markdown": {
         "title": "tools/markdown"
       }
