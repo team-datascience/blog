@@ -15,8 +15,8 @@ const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
   render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
+    const { siteConfig, language = '' } = this.props;
+    const { baseUrl, docsUrl } = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
@@ -64,8 +64,8 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
+            <Button href="#profile">profile</Button>
+            <Button href={docUrl('dataScientistProfiles.html')}>Click Here Profile</Button>
             <Button href={docUrl('doc2.html')}>Example Link 2</Button>
           </PromoSection>
         </div>
@@ -76,8 +76,8 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const { config: siteConfig, language = '' } = this.props;
+    const { baseUrl } = siteConfig;
 
     const Block = props => (
       <Container
@@ -92,17 +92,17 @@ class Index extends React.Component {
       </Container>
     );
 
-    const FeatureCallout = () => (
+    const Blog = () => (
       <div
         className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        style={{ textAlign: 'center' }}>
+        <h2>blog</h2>
+        <MarkdownBlock>This blog for Datascients</MarkdownBlock>
       </div>
     );
 
-    const TryOut = () => (
-      <Block id="try">
+    const profile = () => (
+      <Block id="profile">
         {[
           {
             content:
@@ -116,6 +116,22 @@ class Index extends React.Component {
         ]}
       </Block>
     );
+
+    // const TryOut = () => (
+    //   <Block id="try">
+    //     {[
+    //       {
+    //         content:
+    //           'To make your landing page more attractive, use illustrations! Check out ' +
+    //           '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
+    //           'The illustrations you see on this page are from unDraw.',
+    //         image: `${baseUrl}img/undraw_code_review.svg`,
+    //         imageAlign: 'left',
+    //         title: 'Wonderful SVG Illustrations',
+    //       },
+    //     ]}
+    //   </Block>
+    // );
 
     const Description = () => (
       <Block background="dark">
@@ -197,12 +213,12 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
+          {/* <Features />
+          <Blog />
           <LearnHow />
           <TryOut />
           <Description />
-          <Showcase />
+          <Showcase /> */}
         </div>
       </div>
     );
