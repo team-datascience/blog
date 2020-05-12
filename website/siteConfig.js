@@ -50,8 +50,8 @@ const siteConfig = {
   favicon: 'img/I_love_AI.png',
   /* Colors for website */
   colors: {
-    primaryColor: '#1F618D',
-    secondaryColor: '#1F618D',
+    primaryColor: '#47448C',
+    secondaryColor: '#47448C',
   },
 
   /* Custom fonts for website */
