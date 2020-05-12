@@ -15,7 +15,7 @@ jobs:
             git config --global user.email "$CIRCLE_USERNAME@users.noreply.github.com"
             git config --global user.name "$CIRCLE_USERNAME"
             echo "machine github.com login $CIRCLE_USERNAME password $GITHUB_TOKEN" > ~/.netrc
-            cd website && yarn install && GIT_USER=$CIRCLE_USERNAME yarn run publish-gh-pages
+            cd website && npm install && GIT_USER=$CIRCLE_USERNAME USE_SSH=false yarn npm publish-gh-pages
 
 workflows:
   version: 2
