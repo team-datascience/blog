@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'Team Data Scientists', // Title for your website.
-  tagline: 'A website is for collaboratively working data scientists',
+  tagline: 'A website for collaboratively working data scientists',
   url: 'https://team-datascience.github.io', // Your website URL
   baseUrl: '/blog/', // Base URL for your project */
   projectName: 'blog',
@@ -50,8 +50,8 @@ const siteConfig = {
   favicon: 'img/I_love_AI.png',
   /* Colors for website */
   colors: {
-    primaryColor: '#47448C',
-    secondaryColor: '#47448C',
+    primaryColor: '#1F618D',
+    secondaryColor: '#1F618D',
   },
 
   /* Custom fonts for website */
