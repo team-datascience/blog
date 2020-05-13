@@ -36,6 +36,7 @@ const siteConfig = {
     { doc: 'doc4', label: 'Technical' },
     // { doc: 'dataScientistProfiles', label: 'Data Scientist Profiles' },
     { doc: 'alogorithms/alogorithmsIntro', label: 'alogorithms' },
+    { doc: 'tools/tools-overview', label: 'Tools' },
     // { page: 'contribute', label: 'contribute' },
     { page: 'help', label: 'Help' },
     { blog: true, label: 'Blog' },

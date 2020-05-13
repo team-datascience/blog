@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "A website is for collaboratively working data scientists",
+    "tagline": "A website for collaboratively working data scientists",
     "docs": {
       "alogorithms/alogorithmsIntro": {
         "title": "alogorithms Intro",
@@ -88,10 +88,16 @@
         "sidebar_label": "Haji Profiles"
       },
       "tools/docusaurus-tips": {
-        "title": "tools/docusaurus-tips"
+        "title": "Docusaurus tips",
+        "sidebar_label": "Docusaurus Tips"
       },
-      "tools/markdown": {
-        "title": "tools/markdown"
+      "tools/git": {
+        "title": "git commands && cheat sheet",
+        "sidebar_label": "Git"
+      },
+      "tools/tools-overview": {
+        "title": "tools-overview",
+        "sidebar_label": "tools-overview"
       }
     },
     "links": {
@@ -99,13 +105,15 @@
       "Data Scientist Profiles": "Data Scientist Profiles",
       "Technical": "Technical",
       "alogorithms": "alogorithms",
+      "Tools": "Tools",
       "Help": "Help",
       "Blog": "Blog"
     },
     "categories": {
       "Data Scientist": "Data Scientist",
       "ProfilesY": "ProfilesY",
-      "algorithms": "algorithms"
+      "algorithms": "algorithms",
+      "tools": "tools"
     }
   },
   "pages-strings": {

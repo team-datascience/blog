@@ -41,5 +41,12 @@
         ]
       }
     ]
+  },
+  "Tools": {
+    "tools": [
+      "tools/tools-overview",
+      "tools/git",
+      "tools/docusaurus-tips"
+    ]
   }
 }
