@@ -24,7 +24,8 @@ const siteConfig = {
   title: 'Team Data Scientists', // Title for your website.
   tagline: 'A website for collaboratively working data scientists',
   url: 'https://team-datascience.github.io', // Your website URL
-  baseUrl: '/blog/', // Base URL for your project */
+  baseUrl: '/blog/', // Change base url forlocalusewhen blog is not woirking  Base URL for your project */ change this  
+  // baseUrl: '/temp/'  enablewhen your testing 
   projectName: 'blog',
   organizationName: 'team-datascience',
 
