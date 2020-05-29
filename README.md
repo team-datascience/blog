@@ -12,8 +12,10 @@
 
     
         
-``` 2. 
+``` 
         cd website
         GIT_USER=<GIT_HUB_USER>  CURRENT_BRANCH=master USE_SSH=false npm run publish-gh-pages 
 
 ```        
+
+
