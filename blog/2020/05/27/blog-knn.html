@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>KNN · Team Data Scientists</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="* K-Nearest Neighbour is one of the simplest Machine Learning algorithms based on Supervised Learning technique."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="KNN · Team Data Scientists"/><meta property="og:type" content="website"/><meta property="og:url" content="https://team-datascience.github.io/blog/blog/2020/05/27/blog-knn"/><meta property="og:description" content="* K-Nearest Neighbour is one of the simplest Machine Learning algorithms based on Supervised Learning technique."/><meta property="og:image" content="https://team-datascience.github.io/blog/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://team-datascience.github.io/blog/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/blog/img/I_love_AI.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://team-datascience.github.io/blog/blog/atom.xml" title="Team Data Scientists Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://team-datascience.github.io/blog/blog/feed.xml" title="Team Data Scientists Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/blog/js/scrollSpy.js"></script><link rel="stylesheet" href="/blog/css/main.css"/><script src="/blog/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/blog/"><img class="logo" src="/blog/img/I_love_AI.png" alt="Team Data Scientists"/><h2 class="headerTitleWithLogo">Team Data Scientists</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/blog/docs/Profiles1/ProfilesIntro" target="_self">Profiles</a></li><li class=""><a href="/blog/docs/DataScientistProfiles/ProfileInfo" target="_self">Data Scientist Profiles</a></li><li class=""><a href="/blog/docs/doc4" target="_self">Technical</a></li><li class=""><a href="/blog/docs/alogorithms/alogorithmsIntro" target="_self">alogorithms</a></li><li class=""><a href="/blog/docs/tools/tools-overview" target="_self">Tools</a></li><li class=""><a href="/blog/help" target="_self">Help</a></li><li class="siteNavGroupActive"><a href="/blog/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/blog/blog/2020/05/27/blog-knn">KNN</a></li><li class="navListItem"><a class="navItem" href="/blog/blog/2020/05/25/blog-pca">pca</a></li><li class="navListItem"><a class="navItem" href="/blog/blog/2017/10/24/new-version-1.0.0">New Version 1.0.0</a></li><li class="navListItem"><a class="navItem" href="/blog/blog/2017/09/26/adding-rss">Adding RSS Support</a></li><li class="navListItem"><a class="navItem" href="/blog/blog/2017/09/25/testing-rss">Adding RSS Support - RSS Truncation Test</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/blog/2020/05/27/blog-knn">KNN</a></h1><p class="post-meta">May 27, 2020</p><div class="authorBlock"><p class="post-authorName"><a href="https://twitter.com/rabbu480    ##personal portfolio give linkdin URL" target="_blank" rel="noreferrer noopener">Jasmin Shaik</a></p><div class="authorPhoto"><a href="https://twitter.com/rabbu480    ##personal portfolio give linkdin URL" target="_blank" rel="noreferrer noopener"><img src="https://graph.facebook.com/100002505182483/picture/?height=200&amp;width=200" alt="Jasmin Shaik"/></a></div></div></header><div><span><ul>
+<li>K-Nearest Neighbour is one of the simplest Machine Learning algorithms based on Supervised Learning technique.</li>
+<li>K-NN algorithm assumes the similarity between the new case/data and available cases and put the new case into the category that is most similar to the available categories.</li>
+<li>K-NN algorithm stores all the available data and classifies a new data point based on the similarity. This means when new data appears then it can be easily classified into a well suite category by using K- NN algorithm.</li>
+<li>K-NN algorithm can be used for Regression as well as for Classification but mostly it is used for the Classification problems.</li>
+<li>K-NN is a non-parametric algorithm, which means it does not make any assumption on underlying data.</li>
+<li>It is also called a lazy learner algorithm because it does not learn from the training set immediately instead it stores the dataset and at the time of classification, it performs an action on the dataset.</li>
+<li>KNN algorithm at the training phase just stores the dataset and when it gets new data, then it classifies that data into a category that is much similar to the new data.</li>
+<li>Example: Suppose, we have an image of a creature that looks similar to cat and dog, but we want to know either it is a cat or dog. So for this identification, we can use the KNN algorithm, as it works on a similarity measure. Our KNN model will find the similar features of the new data set to the cats and dogs images and based on the most similar features it will put it in either cat or dog category.</li>
+<li>K-Nearest Neighbor(KNN) Algorithm for Machine Learning</li>
+</ul>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/blog/blog/">Recent Posts</a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/blog/" class="nav-home"><img src="/blog/img/I_love_AI.png" alt="Team Data Scientists" width="66" height="58"/></a><div><h5>Docs</h5><a href="/blog/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/blog/docs/en/doc2.html">Guides (or other categories)</a><a href="/blog/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/blog/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/blog/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 DataScience4u</section></footer></div></body></html>
