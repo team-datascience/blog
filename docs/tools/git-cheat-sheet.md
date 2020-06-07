@@ -3,19 +3,17 @@ id: git
 title: git commands && cheat sheet
 sidebar_label: Git
 ---
-**# git && commands**
+# **git and commands**
 
 # **git**
 
-Git is a distributed version control system (DVCS). "Distributed" means that all developers within a team have a complete version of the project. A version control system is simply software that lets you effectively manage application versions.
+Git is a  software that lets you effectively manage application versions.
  you'll be able to do the following:
 
  *  Keep track of all files in a project
  *  Record any changes to project files
  *  Restore previous versions of files
- *  Compare and analyze code
- *  Merge code from_ different computers and different      team members.
-
+ 
 # Git Commands
 
 ## Configuring Git
@@ -29,7 +27,7 @@ Git is a distributed version control system (DVCS). "Distributed" means that all
 ```
 ![iloveA-i](assets/image.png)
 
-The git config command is a convenience function that is used to set Git configuration values on a global or local project level. These configuration levels correspond to . gitconfig text files. Executing git config will modify a configuration text file.
+It is used to set Git configuration values on a global level. 
 
 
 ![iloveA-i](assets/list.png)
