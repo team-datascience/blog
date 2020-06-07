@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>git commands &amp;&amp; cheat sheet · Team Data Scientists</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# git &amp;&amp; commands"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="git commands &amp;&amp; cheat sheet · Team Data Scientists"/><meta property="og:type" content="website"/><meta property="og:url" content="https://team-datascience.github.io/blog/"/><meta property="og:description" content="# git &amp;&amp; commands"/><meta property="og:image" content="https://team-datascience.github.io/blog/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://team-datascience.github.io/blog/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/blog/img/I_love_AI.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://team-datascience.github.io/blog/blog/atom.xml" title="Team Data Scientists Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://team-datascience.github.io/blog/blog/feed.xml" title="Team Data Scientists Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>git commands &amp;&amp; cheat sheet · Team Data Scientists</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# **git and commands**"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="git commands &amp;&amp; cheat sheet · Team Data Scientists"/><meta property="og:type" content="website"/><meta property="og:url" content="https://team-datascience.github.io/blog/"/><meta property="og:description" content="# **git and commands**"/><meta property="og:image" content="https://team-datascience.github.io/blog/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://team-datascience.github.io/blog/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/blog/img/I_love_AI.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://team-datascience.github.io/blog/blog/atom.xml" title="Team Data Scientists Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://team-datascience.github.io/blog/blog/feed.xml" title="Team Data Scientists Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
         document.addEventListener('DOMContentLoaded', function() {
           addBackToTop(
             {"zIndex":100}
@@ -60,17 +60,131 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">git commands &amp;&amp; cheat sheet</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="git--commands"></a><a href="#git--commands" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git &amp;&amp; commands</h1>
-<h2><a class="anchor" aria-hidden="true" id="git-commands"></a><a href="#git-commands" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git Commands</h2>
-<ol>
-<li><p>git config</p>
-<pre><code class="hljs"> Usage:  git config –global user.name “[name]”
- Usage: git config –global user.email “[email address]” 
-</code></pre></li>
-</ol>
-<p>This command sets the author name and email address respectively to be used with your commits.</p>
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">git commands &amp;&amp; cheat sheet</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="git-and-commands"></a><a href="#git-and-commands" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>git and commands</strong></h1>
+<h1><a class="anchor" aria-hidden="true" id="git"></a><a href="#git" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>git</strong></h1>
+<p>Git is a  software that lets you effectively manage application versions.
+you'll be able to do the following:</p>
+<ul>
+<li>Keep track of all files in a project</li>
+<li>Record any changes to project files</li>
+<li>Restore previous versions of files</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="git-commands"></a><a href="#git-commands" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git Commands</h1>
+<h2><a class="anchor" aria-hidden="true" id="configuring-git"></a><a href="#configuring-git" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configuring Git</h2>
+<p><strong>git config</strong></p>
+<pre><code class="hljs css language-Usage: git config –global user.name “[name]”">    Usage: git<span class="hljs-built_in"> config </span>–global user.email “[email address]” 
+    Usage: git<span class="hljs-built_in"> config </span>--global color.ui <span class="hljs-literal">true</span>
+    Usage: git<span class="hljs-built_in"> config </span>--list
+</code></pre>
 <p><img src="/blog/docs/assets/image.png" alt="iloveA-i"></p>
-<h2><a class="anchor" aria-hidden="true" id="git-init"></a><a href="#git-init" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git init</h2>
-<p>Usage: git init [repository name]</p>
-<p>This command is used to start a new repository.</p>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-5-29 by jasmin596</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/blog/docs/tools/tools-overview"><span class="arrow-prev">← </span><span>tools-overview</span></a><a class="docs-next button" href="/blog/docs/tools/docusaurus-tips"><span>Docusaurus Tips</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#git-commands">Git Commands</a></li><li><a href="#git-init">git init</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/blog/" class="nav-home"><img src="/blog/img/I_love_AI.png" alt="Team Data Scientists" width="66" height="58"/></a><div><h5>Docs</h5><a href="/blog/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/blog/docs/en/doc2.html">Guides (or other categories)</a><a href="/blog/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/blog/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/blog/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 DataScience4u</section></footer></div></body></html>
+<p>It is used to set Git configuration values on a global level.</p>
+<p><img src="/blog/docs/assets/list.png" alt="iloveA-i"></p>
+<h2><a class="anchor" aria-hidden="true" id="starting-a-new-local-repository-with-git"></a><a href="#starting-a-new-local-repository-with-git" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Starting a New Local Repository with Git</h2>
+<p><strong>git init</strong></p>
+<pre><code class="hljs"><span class="hljs-keyword">Usage</span>: git init [repository <span class="hljs-type">name</span>]
+</code></pre>
+<p>The &quot;init&quot; command stands for initialize. Once you run &quot;git init&quot;, Git will initialize a hidden directory called &quot;.git&quot; in the project's root directory. And you'll get a confirmation that your deposit box is ready! What's next? You might want to know the status of your box: does it store anything yet? To know the Git status, you'll need to run:</p>
+<p><img src="/blog/docs/assets/init.png" alt="iloveA-i"></p>
+<p><strong>git status</strong></p>
+<pre><code class="hljs"><span class="hljs-symbol">  Usage:</span> git status
+</code></pre>
+<p>The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.</p>
+<p><img src="/blog/docs/assets/status.png" alt="iloveA-i"></p>
+<p><strong>git branch</strong></p>
+<pre><code class="hljs"><span class="hljs-symbol"> Usage:</span> git <span class="hljs-keyword">branch
+</span></code></pre>
+<p>The &quot;branch&quot; command helps you create and list branches. It's the go-to command when it comes to managing any aspect of your branches. No matter if in your local repository or on your remotes.</p>
+<p><img src="/blog/docs/assets/branch.png" alt="iloveA-i"></p>
+<p><strong>git add</strong></p>
+<pre><code class="hljs"><span class="hljs-symbol">Usage:</span> git <span class="hljs-keyword">add</span> *
+</code></pre>
+<p>which adds changes in the working directory to the staging area. With the help of this command, you tell Git that you want to add updates to a certain file in the next commit.</p>
+<p><img src="/blog/docs/assets/add.png" alt="iloveA-i"></p>
+<p><strong>Git Commits</strong></p>
+<pre><code class="hljs"><span class="hljs-keyword">Usage</span>: git <span class="hljs-keyword">commit</span> -m "message"
+</code></pre>
+<p>The &quot;commit&quot; command is used to save your changes to the local repository.Using the &quot;git commit&quot; command only saves a new commit object in the local Git repository.</p>
+<p><img src="/blog/docs/assets/commit.png" alt="iloveA-i"></p>
+<h2><a class="anchor" aria-hidden="true" id="push-and-pull-to-and-from-a-remote-repository"></a><a href="#push-and-pull-to-and-from-a-remote-repository" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Push and Pull To and From a Remote Repository</h2>
+<p><strong>git clone</strong></p>
+<pre><code class="hljs">Usage:git <span class="hljs-keyword">clone</span> <span class="hljs-title">-b</span> 'branch_name' <span class="hljs-tag">&lt;git_url&gt;</span>
+                <span class="hljs-keyword">or</span>
+Usage:git <span class="hljs-keyword">clone</span> <span class="hljs-title">&lt;git_url</span>&gt;
+</code></pre>
+<p>git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location.</p>
+<p><img src="/blog/docs/assets/clone.png" alt="iloveA-i"></p>
+<p><strong>git push</strong></p>
+<pre><code class="hljs"><span class="hljs-symbol">Usage:</span>git <span class="hljs-keyword">push</span>
+</code></pre>
+<p>The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo. It's the counterpart to git fetch , but whereas fetching imports commits to local branches, pushing exports commits to remote branches.</p>
+<p><img src="/blog/docs/assets/clone.png" alt="iloveA-i"></p>
+<p><strong>git pull</strong></p>
+<pre><code class="hljs"><span class="hljs-symbol">Usage:</span>git pull
+</code></pre>
+<p>git clone means you are making a copy of the repository in your system. git fork means you are copying the repository to your Github account. git pull means you are fetching the last modified repository. Clone is generally used to get remote repo copy</p>
+<p><img src="/blog/docs/assets/pull.png" alt="iloveA-i"></p>
+<h1><a class="anchor" aria-hidden="true" id="basic-snapshotting"></a><a href="#basic-snapshotting" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic Snapshotting</h1>
+<table>
+<thead>
+<tr><th>Command</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>git status</td><td>Check status</td></tr>
+<tr><td>git add [file-name.txt]</td><td>Add a file to the staging area</td></tr>
+<tr><td>git add -a</td><td>Add all new and changed files to the staging area</td></tr>
+<tr><td>git commit -m &quot;[commit message]&quot;</td><td>Commit changes</td></tr>
+<tr><td>git rm -r [file-name.txt]</td><td>git rm -r [file-name.txt]</td></tr>
+</tbody>
+</table>
+<h1><a class="anchor" aria-hidden="true" id="branching--merging"></a><a href="#branching--merging" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Branching &amp; Merging</h1>
+<table>
+<thead>
+<tr><th>Command</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>git branch</td><td>List branches (the asterisk denotes the current branch)</td></tr>
+<tr><td>git branch -a</td><td>List all branches (local and remote)</td></tr>
+<tr><td>git branch [branch name]</td><td>Create a new branch</td></tr>
+<tr><td>git branch -d [branch name]</td><td>Delete a branch</td></tr>
+<tr><td>git push origin --delete [branch name]</td><td>Delete a remote branch</td></tr>
+<tr><td>git checkout -b [branch name]</td><td>Create a new branch and switch to it</td></tr>
+<tr><td>git checkout -b [branch name] origin/[branch name]</td><td>Clone a remote branch and switch to it</td></tr>
+<tr><td>git branch -m [old branch name] [new branch name]</td><td>Rename a local branch</td></tr>
+<tr><td>git checkout [branch name]</td><td>Switch to a branch</td></tr>
+<tr><td>git checkout</td><td>Switch to the branch last checked out</td></tr>
+<tr><td>git checkout -- [file-name.txt]</td><td>Discard changes to a file</td></tr>
+<tr><td>git merge [branch name]</td><td>Merge a branch into the active branch</td></tr>
+<tr><td>git merge [source branch] [target branch]</td><td>Merge a branch into a target branch</td></tr>
+<tr><td>git stash</td><td>Stash changes in a dirty working directory</td></tr>
+<tr><td>git stash clear</td><td>Remove all stashed entries</td></tr>
+</tbody>
+</table>
+<h1><a class="anchor" aria-hidden="true" id="sharing--updating-projects"></a><a href="#sharing--updating-projects" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sharing &amp; Updating Projects</h1>
+<table>
+<thead>
+<tr><th>Command</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>git push origin [branch name]</td><td>Push a branch to your remote repository</td></tr>
+<tr><td>git push -u origin [branch name]</td><td>Push changes to remote repository (and remember the branch)</td></tr>
+<tr><td>git push</td><td>Push changes to remote repository (remembered branch)</td></tr>
+<tr><td>git push origin --delete [branch name]</td><td>Delete a remote branch</td></tr>
+<tr><td>git pull</td><td>Update local repository to the newest commit</td></tr>
+<tr><td>git pull origin [branch name]</td><td>Pull changes from remote repository</td></tr>
+<tr><td>git remote add origin <a href="ssh://git">ssh://git</a>@github.com/[username]/[repository-name].git</td><td>Add a remote repository</td></tr>
+<tr><td>git remote set-url origin <a href="ssh://git">ssh://git</a>@github.com/[username]/[repository-name].git</td><td>Set a repository's origin branch to SSH</td></tr>
+</tbody>
+</table>
+<h1><a class="anchor" aria-hidden="true" id="inspection--comparison"></a><a href="#inspection--comparison" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Inspection &amp; Comparison</h1>
+<table>
+<thead>
+<tr><th>Command</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>git log</td><td>View changes</td></tr>
+<tr><td>git log --summary</td><td>View changes (detailed)</td></tr>
+<tr><td>git log --oneline</td><td>View changes (briefly)</td></tr>
+<tr><td>git diff [source branch] [target branch]</td><td>Preview changes before merging</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-6-7 by jasmin596</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/blog/docs/tools/tools-overview"><span class="arrow-prev">← </span><span>tools-overview</span></a><a class="docs-next button" href="/blog/docs/tools/docusaurus-tips"><span>Docusaurus Tips</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#configuring-git">Configuring Git</a></li><li><a href="#starting-a-new-local-repository-with-git">Starting a New Local Repository with Git</a></li><li><a href="#push-and-pull-to-and-from-a-remote-repository">Push and Pull To and From a Remote Repository</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/blog/" class="nav-home"><img src="/blog/img/I_love_AI.png" alt="Team Data Scientists" width="66" height="58"/></a><div><h5>Docs</h5><a href="/blog/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/blog/docs/en/doc2.html">Guides (or other categories)</a><a href="/blog/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/blog/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/blog/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 DataScience4u</section></footer></div></body></html>
