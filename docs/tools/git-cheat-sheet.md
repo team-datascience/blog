@@ -25,12 +25,12 @@ Git is a  software that lets you effectively manage application versions.
     Usage: git config --global color.ui true
     Usage: git config --list
 ```
-![iloveA-i](assets/image.png)
+![config](assets/git_screenshots/image.png)
 
 It is used to set Git configuration values on a global level. 
 
 
-![iloveA-i](assets/list.png)
+![list](assets/git_screenshots/list.png)
 
 ## Starting a New Local Repository with Git
 
@@ -42,7 +42,7 @@ Usage: git init [repository name]
 
 The "init" command stands for initialize. Once you run "git init", Git will initialize a hidden directory called ".git" in the project's root directory. And you'll get a confirmation that your deposit box is ready! What's next? You might want to know the status of your box: does it store anything yet? To know the Git status, you'll need to run:
 
-![iloveA-i](assets/init.png)
+![init](assets/git_screenshots/init.png)
 
 
  **git status**
@@ -54,7 +54,7 @@ The "init" command stands for initialize. Once you run "git init", Git will init
  The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. 
 
 
-![iloveA-i](assets/status.png)
+![status](assets/git_screenshots/status.png)
 
 **git branch**
 ```
@@ -62,7 +62,7 @@ The "init" command stands for initialize. Once you run "git init", Git will init
 ```
 The "branch" command helps you create and list branches. It's the go-to command when it comes to managing any aspect of your branches. No matter if in your local repository or on your remotes.
 
-![iloveA-i](assets/branch.png)
+![branch](assets/git_screenshots/branch.png)
 
 **git add**
 
@@ -72,7 +72,7 @@ Usage: git add *
 
  which adds changes in the working directory to the staging area. With the help of this command, you tell Git that you want to add updates to a certain file in the next commit.
 
-![iloveA-i](assets/add.png)
+![add](assets/git_screenshots/add.png)
 
 **Git Commits**
 
@@ -81,7 +81,7 @@ Usage: git commit -m "message"
 ```
 The "commit" command is used to save your changes to the local repository.Using the "git commit" command only saves a new commit object in the local Git repository.
 
-![iloveA-i](assets/commit.png)
+![commits](assets/git_screenshots/commit.png)
 
 ## Push and Pull To and From a Remote Repository
 
@@ -96,7 +96,7 @@ Usage:git clone <git_url>
 git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location.
 
 
-![iloveA-i](assets/clone.png)
+![clone](assets/git_screenshots/clone.png)
 
 **git push**
 
@@ -107,7 +107,7 @@ Usage:git push
 The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo. It's the counterpart to git fetch , but whereas fetching imports commits to local branches, pushing exports commits to remote branches.
 
 
-![iloveA-i](assets/clone.png)
+![push](assets/git_screenshots/push.png)
 
 **git pull**
 
@@ -117,7 +117,7 @@ Usage:git pull
 git clone means you are making a copy of the repository in your system. git fork means you are copying the repository to your Github account. git pull means you are fetching the last modified repository. Clone is generally used to get remote repo copy
 
 
-![iloveA-i](assets/pull.png)
+![pull](assets/git_screenshots/pull.png)
 
 
 # Basic Snapshotting

@@ -48,5 +48,25 @@
       "tools/git",
       "tools/docusaurus-tips"
     ]
+  },
+  "target": {
+    "target": [
+      "target/haji",
+      "target/jasmin"
+    ]
+  },
+  "python": {
+    "python": [
+      "python/numpy",
+      "python/pandas"
+    ]
+  },
+  "ML": {
+    "ML": [
+      "ML/pca",
+      "ML/t-sne"
+    ]
   }
 }
+
+

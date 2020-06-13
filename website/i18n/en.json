@@ -67,6 +67,14 @@
       "ML/doc1": {
         "title": "ML/doc1"
       },
+      "ML/pca": {
+        "title": "pca",
+        "sidebar_label": "pca"
+      },
+      "ML/t-sne": {
+        "title": "t-sne",
+        "sidebar_label": "t-sne"
+      },
       "Profiles1/Haji_mastan_Vali": {
         "title": "Haji mastan Vali",
         "sidebar_label": "Haji mastan Vali"
@@ -87,6 +95,22 @@
         "title": "Haji p",
         "sidebar_label": "Haji Profiles"
       },
+      "python/numpy": {
+        "title": "numpy",
+        "sidebar_label": "numpy"
+      },
+      "python/pandas": {
+        "title": "pandas",
+        "sidebar_label": "pandas"
+      },
+      "target/haji": {
+        "title": "haji",
+        "sidebar_label": "haji"
+      },
+      "target/jasmin": {
+        "title": "jasmin",
+        "sidebar_label": "jasmin"
+      },
       "tools/docusaurus-tips": {
         "title": "Docusaurus tips",
         "sidebar_label": "Docusaurus Tips"
@@ -106,6 +130,9 @@
       "Technical": "Technical",
       "alogorithms": "alogorithms",
       "Tools": "Tools",
+      "target": "target",
+      "python": "python",
+      "ML": "ML",
       "Help": "Help",
       "Blog": "Blog"
     },
@@ -113,7 +140,10 @@
       "Data Scientist": "Data Scientist",
       "ProfilesY": "ProfilesY",
       "algorithms": "algorithms",
-      "tools": "tools"
+      "tools": "tools",
+      "target": "target",
+      "python": "python",
+      "ML": "ML"
     }
   },
   "pages-strings": {
