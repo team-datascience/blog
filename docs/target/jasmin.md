@@ -2,10 +2,9 @@
 id: jasmin
 title: jasmin
 sidebar_label: jasmin
-
 ---
 
-**My Target**
+** jasmin **
 
 Module 7: Data Mining(Unsupervised Learning) and Recommender Systems + Real-World Case Studies
 

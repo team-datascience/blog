@@ -51,6 +51,7 @@
   },
   "target": {
     "target": [
+      "target/target",
       "target/haji",
       "target/jasmin"
     ]
@@ -68,5 +69,3 @@
     ]
   }
 }
-
-

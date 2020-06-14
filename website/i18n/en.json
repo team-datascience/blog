@@ -111,6 +111,10 @@
         "title": "jasmin",
         "sidebar_label": "jasmin"
       },
+      "target/target": {
+        "title": "Path to Datascientist",
+        "sidebar_label": "target"
+      },
       "tools/docusaurus-tips": {
         "title": "Docusaurus tips",
         "sidebar_label": "Docusaurus Tips"
