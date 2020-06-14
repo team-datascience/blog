@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>pca · Team Data Scientists</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="**Principal Component Analysis**"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="pca · Team Data Scientists"/><meta property="og:type" content="website"/><meta property="og:url" content="https://team-datascience.github.io/blog/"/><meta property="og:description" content="**Principal Component Analysis**"/><meta property="og:image" content="https://team-datascience.github.io/blog/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://team-datascience.github.io/blog/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/blog/img/I_love_AI.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://team-datascience.github.io/blog/blog/atom.xml" title="Team Data Scientists Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://team-datascience.github.io/blog/blog/feed.xml" title="Team Data Scientists Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/blog/js/scrollSpy.js"></script><link rel="stylesheet" href="/blog/css/main.css"/><script src="/blog/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/blog/"><img class="logo" src="/blog/img/I_love_AI.png" alt="Team Data Scientists"/><h2 class="headerTitleWithLogo">Team Data Scientists</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/blog/docs/Profiles1/ProfilesIntro" target="_self">Profiles</a></li><li class=""><a href="/blog/docs/DataScientistProfiles/ProfileInfo" target="_self">Data Scientist Profiles</a></li><li class=""><a href="/blog/docs/doc4" target="_self">Technical</a></li><li class=""><a href="/blog/docs/alogorithms/alogorithmsIntro" target="_self">alogorithms</a></li><li class=""><a href="/blog/docs/tools/tools-overview" target="_self">Tools</a></li><li class=""><a href="/blog/docs/target/target" target="_self">target</a></li><li class=""><a href="/blog/docs/python/numpy" target="_self">python</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/blog/docs/ML/pca" target="_self">ML</a></li><li class=""><a href="/blog/help" target="_self">Help</a></li><li class=""><a href="/blog/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>ML</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">ML<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem navListItemActive"><a class="navItem" href="/blog/docs/ML/pca">pca</a></li><li class="navListItem"><a class="navItem" href="/blog/docs/ML/t-sne">t-sne</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">pca</h1></header><article><div><span><p><strong>Principal Component Analysis</strong></p>
+<ul>
+<li><p>PCA is a method for reducing the dimensionality of data.</p></li>
+<li><p>It can be thought of as a projection method where data with n-columns (features) is projected into a subspace with n or fewer columns, whilst retaining the essence of the original data.</p></li>
+<li><p>The PCA method can be described and implemented using the tools of linear algebra.</p></li>
+<li><p>PCA is an operation applied to a dataset, represented by an n x m matrix A that results in a projection of A which we will call A'.
+<img src="/blog/docs/assets/pca/nd.png" alt="2-d to 1-d "></p></li>
+</ul>
+<p><strong>History</strong></p>
+<ul>
+<li>PCA was invented in 1901 by Karl Pearson as an analogue of the principal axis theorem in mechanics. It was later independently developed and named by Harold Hotelling in the 1930's.</li>
+</ul>
+<p><strong>PCA for Data Visualization</strong></p>
+<p>For a lot of machine learning applications it helps to be able to visualize your data. Visualizing 2 or 3 dimensional data is not that challenging. You can use PCA to reduce that 4 dimensional data into 2 or 3 dimensions so that you can plot and hopefully understand the data better.</p>
+<p><strong>PCA used for</strong></p>
+<p>Principal Component Analysis (PCA) is used to explain the variance-covariance structure of a set of variables through linear combinations.</p>
+<p><strong>Implementing PCA on a 2-D Dataset</strong>
+Step 1: Normalize the data</p>
+<p>Step 2: Calculate the eigenvalues and eigenvectors</p>
+<p>Step 3: Choosing components and forming a feature vector</p>
+<p>Step 4: Forming Principal Components</p>
+<p><strong>Mathematics Behind PCA</strong></p>
+<p>PCA can be thought of as an unsupervised learning problem. The whole process of obtaining principle components from a raw
+dataset can be simplified in six parts :</p>
+<ul>
+<li><p>Take the whole dataset consisting of d+1 dimensions and ignore the labels such that our new dataset becomes d dimensional.</p></li>
+<li><p>Compute the mean for every dimension of the whole dataset.</p></li>
+<li><p>Compute the covariance matrix of the whole dataset.</p></li>
+<li><p>Compute eigenvectors and the corresponding eigenvalues.</p></li>
+<li><p>Sort the eigenvectors by decreasing eigenvalues and choose k eigenvectors with the largest eigenvalues to form a d × k dimensional matrix W.</p></li>
+<li><p>Use this d × k eigenvector matrix to transform the samples onto the new subspace.</p></li>
+</ul>
+<p>So, let’s unfurl the maths behind each of this one by one.</p>
+<p><strong>1. Take the whole dataset consisting of d+1 dimensions and ignore the labels such that our new dataset becomes d dimensional.</strong></p>
+<p>Let’s say we have a dataset which is d+1 dimensional. Where d could be thought as X_train and 1 could be thought as y_train (labels) in modern machine learning paradigm. So, X_train + y_train makes up our complete train dataset.</p>
+<p>So, after we drop the labels we are left with d dimensional dataset and this would be the dataset we will use to find the principal components. Also, let’s assume we are left with a three-dimensional dataset after ignoring the labels i.e d = 3.</p>
+<p>we will assume that the samples stem from two different classes, where one-half samples of our dataset are labeled class 1 and the other half class 2.</p>
+<p>Let our data matrix X be the score of three students :</p>
+<p><img src="/blog/docs/assets/pca/student.png" alt="data"></p>
+<ol start="2">
+<li><strong>Compute the mean of every dimension of the whole dataset</strong>.</li>
+</ol>
+<p>The data from the above table can be represented in matrix A, where each column in the matrix shows scores on a test and each row shows the score of a student.</p>
+<p><img src="/blog/docs/assets/pca/matrix.png" alt="matrix"></p>
+<p>So, The mean of matrix A would be</p>
+<pre><code class="hljs css language-_"> A =[<span class="hljs-number">66</span> <span class="hljs-number">60</span> <span class="hljs-number">60</span>]
+Mean of Matrix A
+</code></pre>
+<p><strong>3. Compute the covariance matrix of the whole dataset ( sometimes also called as the variance-covariance matrix)</strong></p>
+<p>So, we can compute the covariance of two variables X and Y using the following formula</p>
+<p><img src="/blog/docs/assets/pca/formula.png" alt="formula"></p>
+<p>Using the above formula, we can find the covariance matrix of A. Also, the result would be a square matrix of d ×d dimensions.</p>
+<p>Let’s rewrite our original matrix like this</p>
+<p><img src="/blog/docs/assets/pca/matrixA.png" alt="matrixA"></p>
+<p>Its covariance matrix would be</p>
+<p><img src="/blog/docs/assets/pca/covariance.png" alt="covariance"></p>
+<p>Few points that can be noted here is :</p>
+<ul>
+<li><p>Shown in Blue along the diagonal, we see the variance of scores for each test. The art test has the biggest variance (720); and the English test, the smallest (360). So we can say that art test scores have more variability than English test scores.</p></li>
+<li><p>The covariance is displayed in black in the off-diagonal elements of the matrix A</p></li>
+</ul>
+<p>a) The covariance between math and English is positive (360), and the covariance between math and art is positive (180). This means the scores tend to covary in a positive way. As scores on math go up, scores on art and English also tend to go up; and vice versa.</p>
+<p>b) The covariance between English and art, however, is zero. This means there tends to be no predictable relationship between the movement of English and art scores.</p>
+<p><strong>4. Compute Eigenvectors and corresponding Eigenvalues</strong></p>
+<p>Intuitively, an eigenvector is a vector whose direction remains unchanged when a linear transformation is applied to it.</p>
+<p>Now, we can easily compute eigenvalue and eigenvectors from the covariance matrix that we have above.</p>
+<p>Let A be a square matrix, ν a vector and λ a scalar that satisfies Aν = λν, then λ is called eigenvalue associated with eigenvector ν of A.</p>
+<p>The eigenvalues of A are roots of the characteristic equation</p>
+<p><img src="/blog/docs/assets/pca/det.png" alt="det"></p>
+<p>Calculating det(A-λI) first, I is an identity matrix :</p>
+<p><img src="/blog/docs/assets/pca/function.png" alt="function"></p>
+<p>Simplifying the matrix first, we can calculate the determinant later,</p>
+<p><img src="/blog/docs/assets/pca/simple.png" alt="simple"></p>
+<p>Now that we have our simplified matrix, we can find the determinant of the same :</p>
+<p><img src="/blog/docs/assets/pca/lamda.png" alt="lamda"></p>
+<p>We now have the equation and we need to solve for λ, so as to get the eigenvalue of the matrix. So, equating the above equation to zero :</p>
+<p><img src="/blog/docs/assets/pca/1.png" alt="1"></p>
+<p>After solving this equation for the value of λ, we get the following value</p>
+<p><img src="/blog/docs/assets/pca/function.png" alt="function"></p>
+<p>Now, we can calculate the eigenvectors corresponding to the above eigenvalues. I would not show how to calculate eigenvector here, visit this link to understand how to calculate eigenvectors.</p>
+<p>So, after solving for eigenvectors we would get the following solution for the corresponding eigenvalues</p>
+<p><img src="/blog/docs/assets/pca/cal.png" alt="function"></p>
+<p><strong>5.Sort the eigenvectors by decreasing eigenvalues and choose k eigenvectors with the largest eigenvalues to form a d × k dimensional matrix W.</strong></p>
+<p>We started with the goal to reduce the dimensionality of our feature space, i.e., projecting the feature space via PCA onto a smaller subspace, where the eigenvectors will form the axes of this new feature subspace. However, the eigenvectors only define the directions of the new axis, since they have all the same unit length 1.</p>
+<p>So, in order to decide which eigenvector(s) we want to drop for our lower-dimensional subspace, we have to take a look at the corresponding eigenvalues of the eigenvectors. Roughly speaking, the eigenvectors with the lowest eigenvalues bear the least information about the distribution of the data, and those are the ones we want to drop.
+The common approach is to rank the eigenvectors from highest to lowest corresponding eigenvalue and choose the top k eigenvectors.</p>
+<p>So, after sorting the eigenvalues in decreasing order, we have</p>
+<p><img src="/blog/docs/assets/pca/out.png" alt="out"></p>
+<p>For our simple example, where we are reducing a 3-dimensional feature space to a 2-dimensional feature subspace, we are combining the two eigenvectors with the highest eigenvalues to construct our d×k dimensional eigenvector matrix W.</p>
+<p>So, eigenvectors corresponding to two maximum eigenvalues are :</p>
+<p><img src="/blog/docs/assets/pca/w.png" alt="w"></p>
+<ol start="6">
+<li><strong>Transform the samples onto the new subspace</strong></li>
+</ol>
+<p>In the last step, we use the 2×3 dimensional matrix W that we just computed to transform our samples onto the new subspace via the equation y = W′ × x where W′ is the transpose of the matrix W.</p>
+<p><strong>Applications of Principal Component Analysis (PCA) are:</strong></p>
+<ul>
+<li><p>Spike-triggered covariance analysis in Neuroscience</p></li>
+<li><p>Quantitative Finance</p></li>
+<li><p>Image Compression</p></li>
+<li><p>Facial Recognition</p></li>
+<li><p>Other applications like Medical Data correlation</p></li>
+</ul>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-6-14 by jasmin596</em></div><div class="docs-prevnext"><a class="docs-next button" href="/blog/docs/ML/t-sne"><span>t-sne</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/blog/" class="nav-home"><img src="/blog/img/I_love_AI.png" alt="Team Data Scientists" width="66" height="58"/></a><div><h5>Docs</h5><a href="/blog/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/blog/docs/en/doc2.html">Guides (or other categories)</a><a href="/blog/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/blog/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/blog/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 DataScience4u</section></footer></div></body></html>

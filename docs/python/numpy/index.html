@@ -1,0 +1,220 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>numpy · Team Data Scientists</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="**NUMPY**"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="numpy · Team Data Scientists"/><meta property="og:type" content="website"/><meta property="og:url" content="https://team-datascience.github.io/blog/"/><meta property="og:description" content="**NUMPY**"/><meta property="og:image" content="https://team-datascience.github.io/blog/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://team-datascience.github.io/blog/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/blog/img/I_love_AI.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://team-datascience.github.io/blog/blog/atom.xml" title="Team Data Scientists Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://team-datascience.github.io/blog/blog/feed.xml" title="Team Data Scientists Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/blog/js/scrollSpy.js"></script><link rel="stylesheet" href="/blog/css/main.css"/><script src="/blog/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/blog/"><img class="logo" src="/blog/img/I_love_AI.png" alt="Team Data Scientists"/><h2 class="headerTitleWithLogo">Team Data Scientists</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/blog/docs/Profiles1/ProfilesIntro" target="_self">Profiles</a></li><li class=""><a href="/blog/docs/DataScientistProfiles/ProfileInfo" target="_self">Data Scientist Profiles</a></li><li class=""><a href="/blog/docs/doc4" target="_self">Technical</a></li><li class=""><a href="/blog/docs/alogorithms/alogorithmsIntro" target="_self">alogorithms</a></li><li class=""><a href="/blog/docs/tools/tools-overview" target="_self">Tools</a></li><li class=""><a href="/blog/docs/target/target" target="_self">target</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/blog/docs/python/numpy" target="_self">python</a></li><li class=""><a href="/blog/docs/ML/pca" target="_self">ML</a></li><li class=""><a href="/blog/help" target="_self">Help</a></li><li class=""><a href="/blog/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>python</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">python<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem navListItemActive"><a class="navItem" href="/blog/docs/python/numpy">numpy</a></li><li class="navListItem"><a class="navItem" href="/blog/docs/python/pandas">pandas</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">numpy</h1></header><article><div><span><p><strong>NUMPY</strong></p>
+<p><strong>Numpy</strong></p>
+<blockquote>
+<p>Numpy stands for Numerical Python, is a library consisting of multidimensional array objects and a collection of routines for processing those arrays. Using NumPy, mathematical and logical operations on arrays can be performed. It also discusses the various array functions, types of indexing, etc.</p>
+</blockquote>
+<p><strong>History of Numpy</strong></p>
+<blockquote>
+<p>The ancestor of NumPy, Numeric, was originally created by Jim Hugunin with contributions from several other developers. In 2005, Travis Oliphant created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. NumPy is open-source software and has many contributors.</p>
+</blockquote>
+<p><strong>Numpy installation</strong></p>
+<ul>
+<li><p>First make sure pip has been installed on your OS. If not installed please refer article How To Install Python/Pip On Windows.</p></li>
+<li><p>Run pip install command to install related packages. pip install numpy.</p></li>
+<li><p>Run pip uninstall command to uninstall related packages.</p></li>
+</ul>
+<p><strong>Why Use NumPy ?</strong></p>
+<ul>
+<li><p>In Python we have lists that serve the purpose of arrays, but they are slow to process.</p></li>
+<li><p>NumPy aims to provide an array object that is up to 50x faster that traditional Python lists.</p></li>
+<li><p>The array object in NumPy is called ndarray, it provides a lot of supporting functions that make working with ndarray very easy.</p></li>
+<li><p>Arrays are very frequently used in data science, where speed and resources are very important.</p></li>
+</ul>
+<p><strong>Where is NumPy used?</strong></p>
+<blockquote>
+<p>NumPy is a package in Python used for Scientific Computing. NumPy package is used to perform different operations. The ndarray (NumPy Array) is a multidimensional array used to store values of same datatype. These arrays are indexed just like Sequences, starts with zero.</p>
+</blockquote>
+<p><strong>NumPy Creating Arrays</strong></p>
+<p>Create a NumPy ndarray Object</p>
+<ul>
+<li><p>NumPy is used to work with arrays. The array object in NumPy is called ndarray.</p></li>
+<li><p>We can create a NumPy ndarray object by using the array() function.</p></li>
+</ul>
+<pre><code class="hljs"><span class="hljs-keyword">import</span> numpy as np
+
+arr = np.<span class="hljs-built_in">array</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>])
+
+print(arr)
+
+print(type(arr))
+
+</code></pre>
+<p><strong>NumPy range</strong></p>
+<p>The range() function is used to generate a sequence of numbers over time</p>
+<p><img src="/blog/docs/assets/numpy/range.png" alt="range"></p>
+<hr>
+<p><strong>NumPy arange</strong></p>
+<p>NumPy arange() is one of the array creation routines based on numerical ranges. It creates an instance of ndarray with evenly spaced values and returns the reference to it.</p>
+<pre><code class="hljs"><span class="hljs-keyword">import</span> numpy as np
+a=np.<span class="hljs-built_in">array</span>([<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>])                                  
+print(a)
+print(np.arange(<span class="hljs-number">10</span>))
+
+</code></pre>
+<p><strong>timeit</strong></p>
+<p>timeit() method is available with python library timeit. It is used to get the execution time taken for the small code given. The library runs the code statement 1 million times and provides the minimum time taken from the set. It is a useful method that helps in checking the performance of the code.</p>
+<pre><code class="hljs">
+a = np.arange(<span class="hljs-number">1000</span>)
+%timeit a**<span class="hljs-number">2</span>
+
+</code></pre>
+<p><strong>Load Data File With NumPy</strong></p>
+<p>we can load dataset using numpy.numpy. <strong>loadtxt()</strong> function</p>
+<p><img src="/blog/docs/assets/numpy/load.png" alt="load"></p>
+<p><strong>Shape of an Array</strong></p>
+<p>The shape of an array is the number of elements in each dimension.</p>
+<pre><code class="hljs">
+<span class="hljs-keyword">import</span> numpy as np
+
+arr = np.<span class="hljs-built_in">array</span>([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>]])
+
+print(arr.shape)
+
+</code></pre>
+<p><strong>NumPy Array Reshaping</strong></p>
+<ul>
+<li><p>Reshaping arrays</p></li>
+<li><p>Reshaping means changing the shape of an array.</p></li>
+<li><p>The shape of an array is the number of elements in each dimension.</p></li>
+<li><p>By reshaping we can add or remove dimensions or change number of elements in each dimension.</p></li>
+</ul>
+<pre><code class="hljs"><span class="hljs-keyword">import</span> numpy as np
+
+arr = np.<span class="hljs-built_in">array</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>])
+
+newarr = arr.reshape(<span class="hljs-number">4</span>, <span class="hljs-number">3</span>)
+
+print(newarr)
+
+</code></pre>
+<p><strong>NumPy Joining Array</strong></p>
+<ul>
+<li><p>joining means putting contents of two or more arrays in a single array.</p></li>
+<li><p>We pass a sequence of arrays that we want to join to the concatenate() function, along with the axis. If axis is not explicitly passed, it is taken as 0.</p></li>
+</ul>
+<pre><code class="hljs"> <span class="hljs-keyword">import</span> numpy as np
+
+ arr1 = np.<span class="hljs-built_in">array</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+
+ arr2 = np.<span class="hljs-built_in">array</span>([<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>])
+
+ arr = np.concatenate((arr1, arr2))
+
+ print(arr)
+
+</code></pre>
+<p><strong>Splitting NumPy Arrays</strong></p>
+<ul>
+<li><p>Splitting is reverse operation of Joining.</p></li>
+<li><p>Joining merges multiple arrays into one and Splitting breaks one array into multiple.</p></li>
+<li><p>We use array_split() for splitting arrays, we pass it the array we want to split and the number of splits.</p></li>
+</ul>
+<pre><code class="hljs"><span class="hljs-keyword">import</span> numpy as np
+
+arr = np.<span class="hljs-built_in">array</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>])
+
+newarr = np.<span class="hljs-built_in">array</span>_split(arr, <span class="hljs-number">3</span>)
+
+print(newarr)
+</code></pre>
+<p><strong>Searching Arrays</strong></p>
+<ul>
+<li><p>You can search an array for a certain value, and return the indexes that get a match.</p></li>
+<li><p>To search an array, use the where() method.</p></li>
+</ul>
+<pre><code class="hljs"><span class="hljs-keyword">import</span> numpy as np
+
+arr = np.<span class="hljs-built_in">array</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">4</span>, <span class="hljs-number">4</span>])
+
+x = np.where(arr == <span class="hljs-number">4</span>)
+
+print(x)
+</code></pre>
+<p><strong>Sorting Arrays</strong></p>
+<ul>
+<li><p>Sorting means putting elements in a ordered sequence.</p></li>
+<li><p>Ordered sequence is any sequence that has an order corresponding to elements, like numeric or alphabetical, ascending or descending.</p></li>
+<li><p>The NumPy ndarray object has a function called sort(), that will sort a specified array.</p></li>
+</ul>
+<pre><code class="hljs"><span class="hljs-keyword">import</span> numpy as np
+
+arr = np.<span class="hljs-built_in">array</span>([<span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>])
+
+print(np.sort(arr))
+
+</code></pre>
+<p><strong>Advantages NumPy</strong></p>
+<table>
+<thead>
+<tr><th>Advantages NumPy</th></tr>
+</thead>
+<tbody>
+<tr><td>Broadcasting Functionality</td></tr>
+<tr><td>Processing Speed</td></tr>
+<tr><td>Many Convenience Methods</td></tr>
+<tr><td>Memory Footprint</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-6-13 by jasmin596</em></div><div class="docs-prevnext"><a class="docs-next button" href="/blog/docs/python/pandas"><span>pandas</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/blog/" class="nav-home"><img src="/blog/img/I_love_AI.png" alt="Team Data Scientists" width="66" height="58"/></a><div><h5>Docs</h5><a href="/blog/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/blog/docs/en/doc2.html">Guides (or other categories)</a><a href="/blog/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/blog/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/blog/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 DataScience4u</section></footer></div></body></html>
