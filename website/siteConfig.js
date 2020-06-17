@@ -38,6 +38,7 @@ const siteConfig = {
     // { doc: 'dataScientistProfiles', label: 'Data Scientist Profiles' },
     { doc: 'alogorithms/alogorithmsIntro', label: 'alogorithms' },
     { doc: 'tools/tools-overview', label: 'Tools' },
+    { doc: 'DataScience/datascience', label: 'DataScience' },
     // { page: 'contribute', label: 'contribute' },
     { page: 'help', label: 'Help' },
     { blog: true, label: 'Blog' },

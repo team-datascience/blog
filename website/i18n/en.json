@@ -21,6 +21,48 @@
         "title": "quciksort Intro",
         "sidebar_label": "quciksort"
       },
+      "DataScience/datascience": {
+        "title": "datascience",
+        "sidebar_label": "datascience Introduction"
+      },
+      "DataScience/ML/doc1": {
+        "title": "DataScience/ML/doc1"
+      },
+      "DataScience/ML/pca": {
+        "title": "pca",
+        "sidebar_label": "pca"
+      },
+      "DataScience/ML/t-sne": {
+        "title": "t-sne",
+        "sidebar_label": "t-sne"
+      },
+      "DataScience/python/numpy": {
+        "title": "numpy",
+        "sidebar_label": "numpy"
+      },
+      "DataScience/python/pandas": {
+        "title": "pandas",
+        "sidebar_label": "pandas"
+      },
+      "DataScience/sql/joins": {
+        "title": "joins",
+        "sidebar_label": "joins"
+      },
+      "DataScience/sql/Queries": {
+        "title": "DataScience/sql/Queries"
+      },
+      "DataScience/target/haji": {
+        "title": "haji",
+        "sidebar_label": "haji"
+      },
+      "DataScience/target/jasmin": {
+        "title": "jasmin",
+        "sidebar_label": "jasmin"
+      },
+      "DataScience/target/target": {
+        "title": "Path to Datascientist",
+        "sidebar_label": "target"
+      },
       "dataScientistProfiles": {
         "title": "Datascientist Profiles in this Community.",
         "sidebar_label": "Example Page"
@@ -64,9 +106,6 @@
       "doc5": {
         "title": "Fifth Document"
       },
-      "ML/doc1": {
-        "title": "ML/doc1"
-      },
       "Profiles1/Haji_mastan_Vali": {
         "title": "Haji mastan Vali",
         "sidebar_label": "Haji mastan Vali"
@@ -106,6 +145,7 @@
       "Technical": "Technical",
       "alogorithms": "alogorithms",
       "Tools": "Tools",
+      "DataScience": "DataScience",
       "Help": "Help",
       "Blog": "Blog"
     },
@@ -113,7 +153,11 @@
       "Data Scientist": "Data Scientist",
       "ProfilesY": "ProfilesY",
       "algorithms": "algorithms",
-      "tools": "tools"
+      "tools": "tools",
+      "target": "target",
+      "python": "python",
+      "ML": "ML",
+      "Data Science": "Data Science"
     }
   },
   "pages-strings": {
