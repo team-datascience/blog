@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>k-nn · Team Data Scientists</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="**k-nn**"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="k-nn · Team Data Scientists"/><meta property="og:type" content="website"/><meta property="og:url" content="https://team-datascience.github.io/blog/"/><meta property="og:description" content="**k-nn**"/><meta property="og:image" content="https://team-datascience.github.io/blog/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://team-datascience.github.io/blog/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/blog/img/I_love_AI.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://team-datascience.github.io/blog/blog/atom.xml" title="Team Data Scientists Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://team-datascience.github.io/blog/blog/feed.xml" title="Team Data Scientists Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/blog/js/scrollSpy.js"></script><link rel="stylesheet" href="/blog/css/main.css"/><script src="/blog/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/blog/"><img class="logo" src="/blog/img/I_love_AI.png" alt="Team Data Scientists"/><h2 class="headerTitleWithLogo">Team Data Scientists</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/blog/docs/Profiles1/ProfilesIntro" target="_self">Profiles</a></li><li class=""><a href="/blog/docs/DataScientistProfiles/ProfileInfo" target="_self">Data Scientist Profiles</a></li><li class=""><a href="/blog/docs/doc4" target="_self">Technical</a></li><li class=""><a href="/blog/docs/alogorithms/alogorithmsIntro" target="_self">alogorithms</a></li><li class=""><a href="/blog/docs/tools/tools-overview" target="_self">Tools</a></li><li class=""><a href="/blog/docs/DataScience/datascience" target="_self">DataScience</a></li><li class=""><a href="/blog/help" target="_self">Help</a></li><li class=""><a href="/blog/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">k-nn</h1></header><article><div><span><p><strong>k-nn</strong></p>
+<p>In pattern recognition, the k-nearest neighbors algorithm (k-NN) is a non-parametric method proposed by <strong>Thomas Cover</strong> used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space. The output depends on whether k-NN is used for classification or regression:</p>
+<ul>
+<li><p>In k-NN classification, the output is a class membership. An object is classified by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of that single nearest neighbor.</p></li>
+<li><p>In k-NN regression, the output is the property value for the object. This value is the average of the values of k nearest neighbors.</p></li>
+<li><p>k-NN is a type of instance-based learning, or lazy learning, where the function is only approximated locally and all computation is deferred until function evaluation.</p></li>
+<li><p>The neighbors are taken from a set of objects for which the class (for k-NN classification) or the object property value (for k-NN regression) is known. This can be thought of as the training set for the algorithm, though no explicit training step is required.</p></li>
+</ul>
+<p><strong>Working of KNN Algorithm</strong></p>
+<blockquote>
+<p>K-nearest neighbors (KNN) algorithm uses ‘feature similarity’ to predict the values of new datapoints which further means that the new data point will be assigned a value based on how closely it matches the points in the training set. We can understand its working with the help of following
+steps −</p>
+</blockquote>
+<p><strong>Step 1</strong> − For implementing any algorithm, we need dataset. So during the first step of KNN, we must load the training as well as test data.</p>
+<p><strong>Step 2</strong> − Next, we need to choose the value of K i.e. the nearest data points. K can be any integer.</p>
+<p><strong>Step 3</strong> − For each point in the test data do the following −</p>
+<ul>
+<li><p><strong>3.1</strong> − Calculate the distance between test data and each row of training data with the help of any of the method namely: Euclidean, Manhattan or Hamming distance. The most commonly used method to calculate distance is Euclidean.</p></li>
+<li><p><strong>3.2</strong> − Now, based on the distance value, sort them in ascending order.</p></li>
+<li><p><strong>3.3</strong> − Next, it will choose the top K rows from the sorted array.</p></li>
+<li><p><strong>3.4</strong> − Now, it will assign a class to the test point based on most frequent class of these rows.</p></li>
+</ul>
+<p><strong>Step 4</strong> − End</p>
+<p>Example</p>
+<p>The following is an example to understand the concept of K and working of KNN algorithm −</p>
+<p>Suppose we have a dataset which can be plotted as follows −</p>
+<p><img src="/blog/docs/assets/k-nn/knn.png" alt="k-nn"></p>
+<p>Now, we need to classify new data point with black dot (at point 60,60) into blue or red class. We are assuming K = 3 i.e. it would find three nearest data points. It is shown in the next diagram −</p>
+<p><img src="/blog/docs/assets/k-nn/knn1.png" alt="k-nn1"></p>
+<p>We can see in the above diagram the three nearest neighbors of the data point with black dot. Among those three, two of them lies in Red class hence the black dot will also be assigned in red class.</p>
+<p><strong>Implementation in Python</strong></p>
+<p>As we know K-nearest neighbors (KNN) algorithm can be used for both classification as well as regression. The following are the recipes in Python to use KNN as classifier.</p>
+<p><strong>KNN as Classifier</strong></p>
+<p>First, start with importing necessary python packages</p>
+<pre><code class="hljs"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+
+</code></pre>
+<p>Next, download the iris dataset from its weblink as follows</p>
+<pre><code class="hljs"><span class="hljs-attr">path</span> = <span class="hljs-string">"https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"</span>
+
+</code></pre>
+<p>Next, we need to assign column names to the dataset as follows</p>
+<pre><code class="hljs">headernames = [<span class="hljs-symbol">'sepal</span>-length', <span class="hljs-symbol">'sepal</span>-width', <span class="hljs-symbol">'petal</span>-length', <span class="hljs-symbol">'petal</span>-width', <span class="hljs-symbol">'Class'</span>]
+
+</code></pre>
+<p>Now, we need to read dataset to pandas dataframe as follows</p>
+<pre><code class="hljs">dataset = pd.read<span class="hljs-constructor">_csv(<span class="hljs-params">path</span>, <span class="hljs-params">names</span> = <span class="hljs-params">headernames</span>)</span>
+dataset.head<span class="hljs-literal">()</span>
+
+</code></pre>
+<table>
+<thead>
+<tr><th>sepal-length</th><th>sepal-width</th><th>petal-length</th><th>petal-width</th><th>Class</th></tr>
+</thead>
+<tbody>
+<tr><td>5.1</td><td>3.5</td><td>1.4</td><td>0.2</td><td>Iris-setosa</td></tr>
+<tr><td>4.9</td><td>3.0</td><td>1.4</td><td>0.2</td><td>Iris-setosa</td></tr>
+<tr><td>4.7</td><td>3.2</td><td>1.3</td><td>0.2</td><td>Iris-setosa</td></tr>
+<tr><td>4.6</td><td>3.1</td><td>1.5</td><td>0.2</td><td>Iris-setosa</td></tr>
+<tr><td>5.0</td><td>3.6</td><td>1.4</td><td>0.2</td><td>Iris-setosa</td></tr>
+</tbody>
+</table>
+<p>Data Preprocessing will be done with the help of following script lines.</p>
+<pre><code class="hljs"><span class="hljs-attr">X</span> = dataset.iloc[:, :-<span class="hljs-number">1</span>].values
+<span class="hljs-attr">y</span> = dataset.iloc[:, <span class="hljs-number">4</span>].values
+</code></pre>
+<p>Next, we will divide the data into train and test split. Following code will split the dataset into 60% training data and 40% of testing data</p>
+<pre><code class="hljs"><span class="hljs-keyword">from</span> sklearn.model_selection <span class="hljs-keyword">import</span> train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = <span class="hljs-number">0.40</span>)
+
+</code></pre>
+<p>Next, data scaling will be done as follows</p>
+<pre><code class="hljs">from sklearn.preprocessing import StandardScaler
+<span class="hljs-keyword">scaler </span>= StandardScaler()
+<span class="hljs-keyword">scaler.fit(X_train)
+</span>X_train = <span class="hljs-keyword">scaler.transform(X_train)
+</span>X_test = <span class="hljs-keyword">scaler.transform(X_test)
+</span>
+</code></pre>
+<p>Next, train the model with the help of KNeighborsClassifier class of sklearn as follows</p>
+<pre><code class="hljs"><span class="hljs-keyword">from</span> sklearn.neighbors <span class="hljs-keyword">import</span> KNeighborsClassifier
+classifier = KNeighborsClassifier(n_neighbors = <span class="hljs-number">8</span>)
+classifier.fit(X_train, y_train)
+
+</code></pre>
+<p>At last we need to make prediction. It can be done with the help of following script −</p>
+<pre><code class="hljs"><span class="hljs-attr">y_pred</span> = classifier.predict(X_test)
+</code></pre>
+<p>Next, print the results as follows</p>
+<p><img src="/blog/docs/assets/k-nn/output.png" alt="output"></p>
+<p><strong>Algorithm</strong></p>
+<ul>
+<li><p>The training examples are vectors in a multidimensional feature space, each with a class label. The training phase of the algorithm consists only of storing the feature vectors and class labels of the training samples.</p></li>
+<li><p>In the classification phase, k is a user-defined constant, and an unlabeled vector (a query or test point) is classified by assigning the label which is most frequent among the k training samples nearest to that query point.</p></li>
+<li><p>A commonly used distance metric for continuous variables is Euclidean distance. For discrete variables, such as for text classification, another metric can be used, such as the overlap metric (or Hamming distance). In the context of gene expression microarray data, for example, k-NN has been employed with correlation coefficients, such as Pearson and Spearman, as a metric. Often, the classification accuracy of k-NN can be improved significantly if the distance metric is learned with specialized algorithms such as Large Margin Nearest Neighbor or Neighbourhood components analysis.</p></li>
+</ul>
+<p><img src="/blog/docs/assets/k-nn/eg.png" alt="example"></p>
+<p><strong>Advantages</strong></p>
+<ol>
+<li><p>The algorithm is simple and easy to implement.</p></li>
+<li><p>There’s no need to build a model, tune several parameters, or make additional assumptions.</p></li>
+<li><p>The algorithm is versatile. It can be used for classification, regression, and search (as we will see in the next section).</p></li>
+</ol>
+<p><strong>Disadvantages</strong></p>
+<ol>
+<li>The algorithm gets significantly slower as the number of examples and/or predictors/independent variables increase.</li>
+</ol>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-6-20 by jasmin596</em></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/blog/" class="nav-home"><img src="/blog/img/I_love_AI.png" alt="Team Data Scientists" width="66" height="58"/></a><div><h5>Docs</h5><a href="/blog/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/blog/docs/en/doc2.html">Guides (or other categories)</a><a href="/blog/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/blog/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/blog/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 DataScience4u</section></footer></div></body></html>
