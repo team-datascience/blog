@@ -28,6 +28,14 @@
       "DataScience/ML/doc1": {
         "title": "DataScience/ML/doc1"
       },
+      "DataScience/ML/k-nn": {
+        "title": "k-nn",
+        "sidebar_label": "k-nn"
+      },
+      "DataScience/ML/MachineLearningIntroduction": {
+        "title": "MachineLearningIntroduction",
+        "sidebar_label": "MachineLearningIntroduction"
+      },
       "DataScience/ML/pca": {
         "title": "pca",
         "sidebar_label": "pca"
