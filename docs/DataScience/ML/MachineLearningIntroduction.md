@@ -1,10 +1,9 @@
 ---
 id: MachineLearningIntroduction
 title: MachineLearningIntroduction
-sidebar_label: MachineLearningIntroduction
+sidebar_label: machinelearning
 ---
 
-# **Machine Learning**
 
 ![Intro](assets/Machinelearning/intro.png)
 
