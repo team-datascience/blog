@@ -10,11 +10,6 @@ sidebar_label: machinelearning
 Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for themselves.
 
 
-**History of machine learning**
-
-1952 — Arthur Samuel wrote the first computer learning program. 
-
-
 **How Machine Learning actually work**
 
 Machine learning algorithms use computational methods to “learn” information directly from data without relying on a predetermined equation as a model. The algorithms adaptively improve their performance as the number of samples available for learning increases. Deep learning is a specialized form of machine learning.
