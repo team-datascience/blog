@@ -5,7 +5,7 @@ sidebar_label: machinelearning
 ---
 
 
-![Intro](assets/Machinelearning/intro.png)
+![Intro](assets/MachineLearning/intro.png)
 
 Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for themselves.
 
@@ -60,13 +60,13 @@ Basically, algorithms play an important role in Machine Learning: On the one han
 * Partially/semi supervised learning
 * Reinforcing learning
 
-![ml](assets/Machinelearning/ml.png)
+![ml](assets/MachineLearning/ml.png)
 
 ### **Supervised Machine Learning**
 
 Supervised learning algorithms try to model relationships and dependencies between the target prediction output and the input features such that we can predict the output values for new data based on those relationships which it learned from the previous data sets.
 
-![Supervised learning](assets/Machinelearning/sl.png)
+![Supervised learning](assets/MachineLearning/sl.png)
 
 Supervised learning problems can be further grouped into regression and classification problems.
 
@@ -135,7 +135,7 @@ Supervised Learning has a lot of challenges and disadvantages that you could fac
 
 The goal for unsupervised learning is to model the underlying structure or distribution in the data in order to learn more about the data.
 
-![unsupervised learning](assets/Machinelearning/ul.png)
+![unsupervised learning](assets/MachineLearning/ul.png)
 
 
 Unsupervised learning problems can be further grouped into clustering and association problems.
@@ -144,7 +144,7 @@ Unsupervised learning problems can be further grouped into clustering and associ
 
 clustering is nothing but grouping  the  similar object into  groups.
 
-![sample](assets/Machinelearning/sample.png)
+![sample](assets/MachineLearning/sample.png)
 
 **Clustering Types**
 
