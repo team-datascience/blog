@@ -49,26 +49,6 @@
       "tools/docusaurus-tips"
     ]
   },
-  "target": {
-    "target": [
-      "target/target",
-      "target/haji",
-      "target/jasmin"
-    ]
-  },
-  "python": {
-    "python": [
-      "python/numpy",
-      "python/pandas"
-      
-    ]
-  },
-  "ML": {
-    "ML": [
-      "ML/pca",
-      "ML/t-sne"
-    ]
-  },
   "Data Science": {
     "Data Science": [
       "DataScience/datascience",
@@ -76,8 +56,10 @@
         "type": "subcategory",
         "label": "MECHAINE LEARING",
         "ids": [
+          "DataScience/ML/MachineLearningIntroduction",
           "DataScience/ML/pca",
-          "DataScience/ML/t-sne"
+          "DataScience/ML/t-sne",
+          "DataScience/ML/k-nn"
         ]
       },
       {
@@ -94,6 +76,15 @@
         "ids": [
           "DataScience/sql/joins",
           "DataScience/sql/Queries"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "target",
+        "ids": [
+          "DataScience/target/target",
+          "DataScience/target/haji",
+          "DataScience/target/jasmin"
         ]
       }
     ]

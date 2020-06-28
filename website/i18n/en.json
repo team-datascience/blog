@@ -28,6 +28,14 @@
       "DataScience/ML/doc1": {
         "title": "DataScience/ML/doc1"
       },
+      "DataScience/ML/k-nn": {
+        "title": "k-nn",
+        "sidebar_label": "k-nn"
+      },
+      "DataScience/ML/MachineLearningIntroduction": {
+        "title": "MachineLearningIntroduction",
+        "sidebar_label": "machinelearning"
+      },
       "DataScience/ML/pca": {
         "title": "pca",
         "sidebar_label": "pca"
@@ -49,7 +57,8 @@
         "sidebar_label": "joins"
       },
       "DataScience/sql/Queries": {
-        "title": "DataScience/sql/Queries"
+        "title": "Queries",
+        "sidebar_label": "Queries"
       },
       "DataScience/target/haji": {
         "title": "haji",
@@ -154,9 +163,6 @@
       "ProfilesY": "ProfilesY",
       "algorithms": "algorithms",
       "tools": "tools",
-      "target": "target",
-      "python": "python",
-      "ML": "ML",
       "Data Science": "Data Science"
     }
   },
