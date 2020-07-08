@@ -60,7 +60,8 @@
           "DataScience/ML/pca",
           "DataScience/ML/t-sne",
           "DataScience/ML/k-nn",
-          "DataScience/ML/k-d tree"   
+          "DataScience/ML/k-d tree",
+          "DataScience/ML/binarytree"   
         ]
       },
       {

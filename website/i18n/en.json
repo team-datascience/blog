@@ -25,6 +25,10 @@
         "title": "datascience",
         "sidebar_label": "datascience Introduction"
       },
+      "DataScience/ML/binarytree": {
+        "title": "binarytree",
+        "sidebar_label": "binarytree"
+      },
       "DataScience/ML/doc1": {
         "title": "DataScience/ML/doc1"
       },
