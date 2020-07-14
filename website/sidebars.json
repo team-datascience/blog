@@ -59,7 +59,8 @@
           "DataScience/ML/MachineLearningIntroduction",
           "DataScience/ML/pca",
           "DataScience/ML/t-sne",
-          "DataScience/ML/k-nn"
+          "DataScience/ML/k-nn",
+          "DataScience/ML/k-d tree"   
         ]
       },
       {
