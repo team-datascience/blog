@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 id: k-dtree
+=======
+id: k-d tree
+>>>>>>> 1573a106929d5ee14acdd57602e974ca1b2c1b5b
 title:  k-d tree
 sidebar_label: k-d tree
 ---
@@ -98,4 +102,7 @@ worst case. [O(n)]
 
 **Disadvantages of K-dtree**
 
+<<<<<<< HEAD
+>Well, KD-trees are really cool. They're a very intuitive way to think about storing data, and as we saw, they could lead to help us find relevant information way sooner. But there are few issues. KD-trees are not the simplest things to implement.
+=======
 >Well, KD-trees are really cool. They're a very intuitive way to think about storing data, and as we saw, they could lead to help us find relevant information way sooner. But there are few issues. KD-trees are not the simplest things to implement.
