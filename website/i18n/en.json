@@ -28,6 +28,10 @@
       "DataScience/ML/doc1": {
         "title": "DataScience/ML/doc1"
       },
+      "DataScience/ML/k-dtree": {
+        "title": "k-d tree",
+        "sidebar_label": "k-d tree"
+      },
       "DataScience/ML/k-nn": {
         "title": "k-nn",
         "sidebar_label": "k-nn"

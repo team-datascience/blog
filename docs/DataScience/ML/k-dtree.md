@@ -1,5 +1,5 @@
 ---
-id: k-d tree
+id: k-dtree
 title:  k-d tree
 sidebar_label: k-d tree
 ---
