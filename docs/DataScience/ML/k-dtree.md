@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-id: k-dtree
-=======
 id: k-d tree
->>>>>>> 1573a106929d5ee14acdd57602e974ca1b2c1b5b
 title:  k-d tree
 sidebar_label: k-d tree
 ---
