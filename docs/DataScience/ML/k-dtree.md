@@ -99,3 +99,4 @@ worst case. [O(n)]
 **Disadvantages of K-dtree**
 
 >Well, KD-trees are really cool. They're a very intuitive way to think about storing data, and as we saw, they could lead to help us find relevant information way sooner. But there are few issues. KD-trees are not the simplest things to implement.
+
