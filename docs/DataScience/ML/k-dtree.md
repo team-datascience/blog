@@ -1,16 +1,17 @@
 ---
-id: k-d tree
-title:  k-d tree
-sidebar_label: k-d tree
+id: k-dtree
+title:  k-dtree
+sidebar_label: k-dtree
 ---
 
-A K-D Tree(also called as K-Dimensional Tree) is a binary search tree where data in each node is a K-Dimensional point in space. ... A non-leaf node in K-D tree divides the space into two parts, called as half-spaces.
+A K-D Tree(also called as K-Dimensional Tree) is a binary search tree where data in each node is a K-Dimensional point in space.A non-leaf node in K-D tree divides the space into two parts, called as half-spaces.
 
 * Invented in 1970s by **Jon Bentley**
 * Name originally meant “3d-trees, 4d-trees, etc”
 where k was the # of dimensions
 * Now, people say “kd-tree of dimension d”
-* **Idea:** Each level of the tree compares against 1
+* **Idea:**
+  Each level of the tree compares against 1
 * dimension.
 * Let’s us have only two children at each node (instead of 2d)
 
@@ -33,7 +34,7 @@ Consider following points in a 2-D plane:
 7. Insert (10, 19): Similarly, this point will lie in the left of (13, 15).
 
 
-![tree](assets/k-d_tree/tree.png)
+![tree](assets/k-dtree/tree.png)
 
 **Find Min in kd-trees**
 
@@ -49,15 +50,15 @@ the dth dimension.
 
 **FindMin(x-dimension):**
 
-![FindMin(x-dimension)](assets/k-d_tree/x.png)
+![FindMin(x-dimension)](assets/k-dtree/x.png)
 
 **FindMin(Y-dimension):**
 
-![FindMin(y-dimension)](assets/k-d_tree/y.png)
+![FindMin(y-dimension)](assets/k-dtree/y.png)
 
 **FindMin(y-dimension): space searched**
 
-![FindMin(y-dimension): space searched](assets/k-d_tree/s.png)
+![FindMin(y-dimension): space searched](assets/k-dtree/s.png)
 
 **Nearest Neighbor Searching in kd-trees**
 
@@ -66,11 +67,11 @@ point P in the data set that is closest to Q.
 
 Doesn’t work: find cell that would contain Q and return the point it
 contains.
-- Reason: the nearest point to P in space may be far from P in the
-tree:
-- E.g. NN(52,52):
+**Reason:** the nearest point to P in space may be far from P in the tree
 
-![eg](assets/k-d_tree/eg.png)
+E.g. NN(52,52):
+
+![eg](assets/k-dtree/eg.png)
 
 **kd-Trees Nearest Neighbor**
 
@@ -86,19 +87,15 @@ modifications to prune to search space
 **Nearest Neighbor Facts**
 
 Might have to search close to the whole tree in the
-worst case. [O(n)]
-• In practice, runtime is closer to:
+worst case. [O(n)] In practice, runtime is closer to:
 - O(2d + log n)
 - log n to find cells “near” the query point
 - 2d to search around cells in that neighborhood
 
 **Advantages of k-d tree**
 
->k-d trees help in partitioning space just as binary search trees help in partitioning the real line. k-d trees recursively partition a region of space, creating a binary space partition at each level of the tree.
+k-d trees help in partitioning space just as binary search trees help in partitioning the real line. k-d trees recursively partition a region of space, creating a binary space partition at each level of the tree.
 
 **Disadvantages of K-dtree**
 
-<<<<<<< HEAD
->Well, KD-trees are really cool. They're a very intuitive way to think about storing data, and as we saw, they could lead to help us find relevant information way sooner. But there are few issues. KD-trees are not the simplest things to implement.
-=======
->Well, KD-trees are really cool. They're a very intuitive way to think about storing data, and as we saw, they could lead to help us find relevant information way sooner. But there are few issues. KD-trees are not the simplest things to implement.
+Well, KD-trees are really cool. They're a very intuitive way to think about storing data, and as we saw, they could lead to help us find relevant information way sooner. But there are few issues. KD-trees are not the simplest things to implement.
