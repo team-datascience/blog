@@ -1,7 +1,7 @@
 ---
-id: k-d tree
-title:  k-d tree
-sidebar_label: k-d tree
+id: k-dtree
+title:  k-dtree
+sidebar_label: k-dtree
 ---
 
 A K-D Tree(also called as K-Dimensional Tree) is a binary search tree where data in each node is a K-Dimensional point in space. ... A non-leaf node in K-D tree divides the space into two parts, called as half-spaces.
@@ -99,12 +99,3 @@ worst case. [O(n)]
 **Disadvantages of K-dtree**
 
 >Well, KD-trees are really cool. They're a very intuitive way to think about storing data, and as we saw, they could lead to help us find relevant information way sooner. But there are few issues. KD-trees are not the simplest things to implement.
-
-
-
-
-
-
-
-
-
