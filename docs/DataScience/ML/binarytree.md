@@ -1,6 +1,6 @@
 ---
 id: binarytree
-title:  binarytree
+title: binarytree
 sidebar_label: binarytree
 ---
 >A binary tree is either empty or consists of a node called the root together with two binary trees called the left subtree and the right subtree. ... The nodes of a binary tree can be numbered in a natural way, level by level, left to right.
