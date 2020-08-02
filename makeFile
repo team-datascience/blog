@@ -1,9 +1,15 @@
-#
+# this will install all the dependencies
 install:
 	cd website && npm install 
 
+# this will build all the dependencies
 build:
-	cd website && npm install 
+	cd website && npm run build 
 
+# this will kick start application
 start:
-	cd website && npm install 
+	# sh fileName
+	cd website && npm start 
+
+# single command for intial clone 
+newclone: install build start
