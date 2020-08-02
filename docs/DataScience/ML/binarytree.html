@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>binarytree · Team Data Scientists</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt;A binary tree is either empty or consists of a node called the root together with two binary trees called the left subtree and the right subtree. ... The nodes of a binary tree can be numbered in a natural way, level by level, left to right."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="binarytree · Team Data Scientists"/><meta property="og:type" content="website"/><meta property="og:url" content="https://team-datascience.github.io/blog/"/><meta property="og:description" content="&gt;A binary tree is either empty or consists of a node called the root together with two binary trees called the left subtree and the right subtree. ... The nodes of a binary tree can be numbered in a natural way, level by level, left to right."/><meta property="og:image" content="https://team-datascience.github.io/blog/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://team-datascience.github.io/blog/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/blog/img/I_love_AI.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://team-datascience.github.io/blog/blog/atom.xml" title="Team Data Scientists Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://team-datascience.github.io/blog/blog/feed.xml" title="Team Data Scientists Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/blog/js/scrollSpy.js"></script><link rel="stylesheet" href="/blog/css/main.css"/><script src="/blog/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/blog/"><img class="logo" src="/blog/img/I_love_AI.png" alt="Team Data Scientists"/><h2 class="headerTitleWithLogo">Team Data Scientists</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/blog/docs/Profiles1/ProfilesIntro" target="_self">Profiles</a></li><li class=""><a href="/blog/docs/DataScientistProfiles/ProfileInfo" target="_self">Data Scientist Profiles</a></li><li class=""><a href="/blog/docs/doc4" target="_self">Technical</a></li><li class=""><a href="/blog/docs/alogorithms/alogorithmsIntro" target="_self">alogorithms</a></li><li class=""><a href="/blog/docs/tools/tools-overview" target="_self">Tools</a></li><li class="siteNavGroupActive"><a href="/blog/docs/DataScience/datascience" target="_self">DataScience</a></li><li class=""><a href="/blog/help" target="_self">Help</a></li><li class=""><a href="/blog/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>MECHAINE LEARING</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Data Science<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/datascience">datascience Introduction</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">MECHAINE LEARING</h4><ul><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/ML/MachineLearningIntroduction">machinelearning</a></li><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/ML/pca">pca</a></li><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/ML/t-sne">t-sne</a></li><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/ML/k-nn">k-nn</a></li><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/ML/k-dtree">k-dtree</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/blog/docs/DataScience/ML/binarytree">binarytree</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">python</h4><ul><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/python/numpy">numpy</a></li><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/python/pandas">pandas</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">sql</h4><ul><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/sql/joins">joins</a></li><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/sql/Queries">Queries</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">target</h4><ul><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/target/target">target</a></li><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/target/haji">haji</a></li><li class="navListItem"><a class="navItem" href="/blog/docs/DataScience/target/jasmin">jasmin</a></li></ul></div></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">binarytree</h1></header><article><div><span><blockquote>
+<p>A binary tree is either empty or consists of a node called the root together with two binary trees called the left subtree and the right subtree. ... The nodes of a binary tree can be numbered in a natural way, level by level, left to right.</p>
+</blockquote>
+<p><strong>More tree terminology:</strong></p>
+<ul>
+<li><p>The depth of a node is the number of edges from the root to the node.</p></li>
+<li><p>The height of a node is the number of edges from the node to the deepest leaf.</p></li>
+<li><p>The height of a tree is a height of the root.</p></li>
+<li><p>A full binary tree is a binary tree in which each node has exactly zero or two children.</p></li>
+<li><p>A complete binary tree is a binary tree, which is completely filled, with the possible exception of the bottom level, which is filled from left to right.</p></li>
+</ul>
+<p><img src="/blog/docs/assets/binarytree/eg.png" alt="eg"></p>
+<ul>
+<li>A complete binary tree is very special tree, it provides the best possible ratio between the number of nodes and the height. The height h of a complete binary tree with N nodes is at most O(log N). We can easily prove this by counting nodes on each level, starting with the root, assuming that each level has the maximum number of nodes:</li>
+</ul>
+<pre><code class="hljs">n = <span class="hljs-number">1</span> + <span class="hljs-number">2</span> + <span class="hljs-number">4</span> + ... + <span class="hljs-number">2</span>h<span class="hljs-number">-1</span> + <span class="hljs-number">2</span>h = <span class="hljs-number">2</span>h+<span class="hljs-number">1</span> - <span class="hljs-number">1</span>
+</code></pre>
+<ul>
+<li>Solving this with respect to h, we obtain</li>
+</ul>
+<pre><code class="hljs">h = <span class="hljs-constructor">O(<span class="hljs-params">log</span> <span class="hljs-params">n</span>)</span>
+</code></pre>
+<ul>
+<li>where the big-O notation hides some superfluous details.</li>
+</ul>
+<p><strong><em>Types of binary trees:</em></strong></p>
+<ul>
+<li><p>A full binary tree (sometimes referred to as a proper or plane binary tree) is a tree in which every node has either 0 or 2 children.</p></li>
+<li><p>In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible.</p></li>
+</ul>
+<p><strong><em>Traversals</em></strong></p>
+<blockquote>
+<p>A traversal is a process that visits all the nodes in the tree. Since a tree is a nonlinear data structure, there is no unique traversal. We will consider several traversal algorithms with we group in the following two kinds;</p>
+</blockquote>
+<ol>
+<li>depth-first traversal</li>
+<li>breadth-first traversal</li>
+</ol>
+<p>There are three different types of depth-first traversals:</p>
+<ul>
+<li><p>PreOrder traversal - visit the parent first and then left and right children.</p></li>
+<li><p>InOrder traversal - visit the left child, then the parent and the right child.</p></li>
+<li><p>PostOrder traversal - visit left child, then the right child and then the parent.</p></li>
+</ul>
+<p>There is only one kind of breadth-first traversal--the level order traversal. This traversal visits nodes by levels from top to bottom and from left to right.</p>
+<p><img src="/blog/docs/assets/binarytree/eg1.png" alt="eg1"></p>
+<p>As an example consider the following tree and its four traversals:</p>
+<p>PreOrder - 8, 5, 9, 7, 1, 12, 2, 4, 11, 3</p>
+<p>InOrder - 9, 5, 1, 7, 2, 12, 8, 4, 3, 11</p>
+<p>PostOrder - 9, 1, 2, 12, 7, 5, 3, 11, 4, 8</p>
+<p>LevelOrder - 8, 5, 4, 9, 7, 11, 1, 12, 3, 2</p>
+<p>In the next picture we demonstarte the order of node visitation. Number 1 denote the first node in a particular traversal and 7 denote the last node.</p>
+<p><img src="/blog/docs/assets/binarytree/eg2.png" alt="eg2"></p>
+<p><strong><em>Binary Search Trees:</em></strong></p>
+<p>We consider a particular kind of a binary tree called a Binary Search Tree (BST). The basic idea behind this data structure is to have such a storing repository that provides the efficient way of data sorting, searching and retriving.</p>
+<ul>
+<li><p>A BST is a binary tree where nodes are ordered in the following way.</p></li>
+<li><p>each node contains one key (also known as data).</p></li>
+<li><p>the keys in the left subtree are less then the key in its parent node, in short L &lt; P.</p></li>
+<li><p>the keys in the right subtree are greater the key in its parent node, in short P &lt; R.</p></li>
+<li><p>duplicate keys are not allowed.</p></li>
+</ul>
+<p><img src="/blog/docs/assets/binarytree/eg3.png" alt="eg3"></p>
+<p>In the following tree all nodes in the left subtree of 10 have keys &lt; 10 while all nodes in the right subtree &gt; 10. Because both the left and right subtrees of a BST are again search trees; the above definition is recursively applied to all internal nodes.</p>
+<p><strong><em>Insertion:</em></strong></p>
+<p>The insertion procedure is quite similar to searching. We start at the root and recursively go down the tree searching for a location in a BST to insert a new node. If the element to be inserted is already in the tree, we are done (we do not insert duplicates). The new node will always replace a NULL reference.</p>
+<p><img src="/blog/docs/assets/binarytree/eg4.png" alt="eg4"></p>
+<p>Example: Given a sequence of numbers</p>
+<pre><code class="hljs"><span class="hljs-number">11</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>, <span class="hljs-number">19</span>, <span class="hljs-number">4</span>, <span class="hljs-number">10</span>, <span class="hljs-number">5</span>, <span class="hljs-number">17</span>, <span class="hljs-number">43</span>, <span class="hljs-number">49</span>, <span class="hljs-number">31</span>
+</code></pre>
+<p><strong><em>Searching:</em></strong></p>
+<ul>
+<li><p>Searching in a BST always starts at the root. We compare a data stored at the root with the key we are searching for (let us call it as toSearch). If the node does not contain the key we proceed either to the left or right child depending upon comparison. If the result of comparison is negative we go to the left child, otherwise - to the right child. The recursive structure of a BST yields a recursive algorithm.</p></li>
+<li><p>Searching in a BST has O(h) worst-case runtime complexity, where h is the height of the tree. Since s binary search tree with n nodes has a minimum of O(log n) levels, it takes at least O(log n) comparisons to find a particular node. Unfortunately, a binary serch tree can degenerate to a linked list, reducing the search time to O(n).</p></li>
+</ul>
+<p><strong><em>Deletion:</em></strong></p>
+<p>Deletion is somewhat more tricky than insertion. There are several cases to consider. A node to be deleted (let us call it as toDelete)</p>
+<ul>
+<li>is not in a tree.</li>
+<li>is a leaf.</li>
+<li>has only one child.</li>
+<li>has two children.</li>
+</ul>
+<p>If toDelete is not in the tree, there is nothing to delete. If toDelete node has only one child the procedure of deletion is identical to deleting a node from a linked list - we just bypass that node being deleted</p>
+<p><img src="/blog/docs/assets/binarytree/eg5.png" alt="eg5"></p>
+<p>Deletion of an internal node with two children is less straightforward. If we delete such a node, we split a tree into two subtrees and therefore, some children of the internal node won't be accessible after deletion. In the picture below we delete 8:</p>
+<p><img src="/blog/docs/assets/binarytree/eg6.png" alt="eg6"></p>
+<p>Deletion starategy is the following: replace the node being deleted with the largest node in the left subtree and then delete that largest node. By symmetry, the node being deleted can be swapped with the smallest node is the right subtree.</p>
+<p>Example:Given a sequence of numbers.</p>
+<pre><code class="hljs"><span class="hljs-number">11</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>, <span class="hljs-number">19</span>, <span class="hljs-number">4</span>, <span class="hljs-number">10</span>, <span class="hljs-number">5</span>, <span class="hljs-number">17</span>, <span class="hljs-number">43</span>, <span class="hljs-number">49</span>, <span class="hljs-number">31</span>
+</code></pre>
+<p>Draw a binary search tree by inserting the above numbers from left to right and then show the two trees that can be the result after the removal of 11.</p>
+<p><img src="/blog/docs/assets/binarytree/eg7.png" alt="eg7"></p>
+<p><strong><em>Advantages of trees:</em></strong></p>
+<ol>
+<li><p>Trees are so useful and frequently used, because they have some very serious advantages.</p></li>
+<li><p>Trees reflect structural relationships in the data.</p></li>
+<li><p>Trees are used to represent hierarchies.</p></li>
+<li><p>Trees provide an efficient insertion and searching.</p></li>
+<li><p>Trees are very flexible data, allowing to move subtrees around with minumum effort.</p></li>
+</ol>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-7-8 by jasmin596</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/blog/docs/DataScience/ML/k-dtree"><span class="arrow-prev">← </span><span>k-dtree</span></a><a class="docs-next button" href="/blog/docs/DataScience/python/numpy"><span>numpy</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/blog/" class="nav-home"><img src="/blog/img/I_love_AI.png" alt="Team Data Scientists" width="66" height="58"/></a><div><h5>Docs</h5><a href="/blog/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/blog/docs/en/doc2.html">Guides (or other categories)</a><a href="/blog/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/blog/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/blog/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 DataScience4u</section></footer></div></body></html>
